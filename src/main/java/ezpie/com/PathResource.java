@@ -22,7 +22,7 @@ public class PathResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("/xyz")
+    @Path("/xyz/{path:.*}")
     public RestResponse<String> func2(@Context UriInfo uriInfo) {
         StringBuilder builder = new StringBuilder();
 
